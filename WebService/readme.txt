@@ -1,0 +1,1 @@
+一个简单的CXF框架下的Web Service的实现的小例子，其中集成了Spring对业务bean进行相关的管理，是Web Service起步的例子
