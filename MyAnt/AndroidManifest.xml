@@ -16,6 +16,7 @@
         >
         <activity
             android:name="cn.longlong.myant.ui.SplashActivity"
+            android:screenOrientation="portrait"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,7 +25,11 @@
             </intent-filter>
         </activity>
         
-        <activity android:name="cn.longlong.myant.ui.MainActivity" android:label="@string/app_name" />
+        <activity android:name="cn.longlong.myant.ui.MainActivity" android:label="@string/app_name" android:screenOrientation="portrait"/>
+        <activity android:name="cn.longlong.myant.ui.SettingActivity" android:label="@string/app_name" android:screenOrientation="portrait"/>
+		<activity android:name="cn.longlong.myant.ui.HelpActivity" android:label="@string/app_name" android:screenOrientation="portrait"/>
+		<activity android:name="cn.longlong.myant.ui.LevelActivity" android:label="@string/app_name" android:screenOrientation="portrait"/>
+		
     </application>
 
 </manifest>

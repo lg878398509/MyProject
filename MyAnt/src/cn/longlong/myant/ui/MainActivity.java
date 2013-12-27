@@ -3,6 +3,7 @@ package cn.longlong.myant.ui;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.AlertDialog.Builder;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -36,18 +37,25 @@ public class MainActivity extends Activity implements OnClickListener{
 
 	@Override
 	public void onClick(View view) {
+		Intent intent = new Intent();
 		switch (view.getId()) {
 		case R.id.start_btn:
-			
+			intent.setClass(MainActivity.this, LevelActivity.class);
+			startActivity(intent);
+			this.finish();
 			break;
 		case R.id.help_btn:
-			
+			intent.setClass(MainActivity.this, HelpActivity.class);
+			startActivity(intent);
+			this.finish();
 			break;
 		case R.id.setting_btn:
-			
+			intent.setClass(MainActivity.this, SettingActivity.class);
+			startActivity(intent);
+			this.finish();
 			break;
 		case R.id.exit_btn:
-			
+			this.finish();
 			break;
 		case R.id.about_btn:
 			showDialogAboutInfo();
